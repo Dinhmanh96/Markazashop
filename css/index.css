@@ -1,0 +1,302 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: Lato-Bold;
+	src:url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+@font-face{
+	font-family: Lato-Light;
+	src:url('../fonts/Lato-Light.ttf') format('truetype');
+}
+.text-icon{
+	font-family: Arial;
+}
+.body{
+	background-color: #f5f5f5;
+}
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+a{
+	text-decoration: none;
+}
+
+.row{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	background: #00aeac;
+	
+}
+
+.number_item{
+	font-size: 15px;
+	background: #fff;
+	border-radius: 0.8em;
+	-moz-border-radius: 0.8em;
+	-webkit-border-radius: 0.8em;
+	color: #00aeac;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.1em;
+	/*margin-right: 5px;*/
+	text-align: center;
+	width: 1.1em; 
+}
+
+
+
+.logo{
+	height: 100px;
+	text-align: center;
+}
+		
+.logo img{
+	padding-top: 5px;
+	width: 100px;
+	height: auto;
+}
+.search{
+	text-align: center;
+	padding: 37px 30px;
+	
+}
+.search input{
+	/*text-align: center;*/
+	border-radius: 10px;
+	width: 100%;
+	padding-left: 30px;
+
+}
+.search input[placeholder="Tim kiem san pham..."]{
+	padding: auto;
+}
+.header-top-right{
+	text-align: center;
+	padding-top: 18px;
+	padding-left: 50px;
+	background: none;
+	border: none;
+}
+
+/*.header-top-right img{
+	height: 30px;
+	width: auto;
+	
+}*/
+
+.header-top-right ul li{
+	list-style: none;
+	float: left;
+	/*float: right;*/
+	padding: 20px 10px;
+	text-align: center;
+}
+.menu{
+
+}
+
+.menu .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #01b9b7;
+
+}
+
+.menu .list li {
+    float: left;
+    padding-right: 20px;
+    padding-left: 15px;
+
+}
+
+.menu .list li a, .drbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu .list li a:hover, .drdown:hover .drbtn {
+    background-color: #009290;
+}
+
+.menu .list list-style: .dr;down {
+    display: inline-block;
+}
+
+.menu .list .drdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu .list .drdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu .list .drdown-content a:hover {
+	background-color: #95d2d1;
+	color: #007978;
+}
+
+.menu .list .drdown:hover .drdown-content {
+    display: block;
+}
+.collapsed{
+	background: #fff;
+	border-radius: 8px;
+}
+.collapsed:focus{
+	background: #007978;
+	border-color: #fff;
+}
+.collapsed:hover:active{
+	background: #fff;
+	border-color: #fff;
+}
+.collapsed:hover{
+	background: #00b3b1;
+	border-color: #fff;
+}
+.btn-primary{
+	background: #007978;
+	border-radius: 8px;
+	border-color: #007978;
+}
+.btn-primary:focus{
+	background: #007978;
+	border-color: #007978;
+}
+.btn-primary:hover:active{
+	background: #007978;
+	border-color: #fff;
+}
+.btn-primary:hover{
+	background: #00b3b1;
+	border-color: #fff;
+}
+.btn-primary:active{
+	border-color: #fff;
+}
+
+.glyphicon{
+	color: #fff;
+	font-size: 17px;
+}
+/*#collapse{
+	padding-top: 10px;
+}*/
+.navbar-header{
+	padding-top: 15px;
+	padding-right: 15px;
+}
+.row-no-padding{
+	padding: 0px;
+
+}
+
+.banner:hover{
+	opacity: 0.8;
+}
+/*.slide:hover{
+	display: block;
+}*/
+/*.hover{
+	background: #000;
+	opacity: 0.7;
+	display: none;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 269px;
+}
+.hover a{
+	color: #fff;
+}
+.post:hover .hover{
+	display: block;
+}
+*/
+.top100{
+	height: auto;
+	/*padding-top: 0px;*/
+	margin-bottom: 20px;
+	text-align: center;
+}
+.text-top100{
+	padding-top: 15;
+	color: #fff;
+
+}
+.production{
+	/*height: 233px;*/
+	background-color: #fff;
+	width: 220px;
+	height: 290px;
+	float: left;
+	padding: 1px 3px;
+	/*border: 1px solid;*/
+	/*border-color: #000;*/
+	margin-bottom: 10px;
+}
+
+.production:hover{
+	border: 1px solid #00b3b1;
+	opacity: 0.6;
+	padding: auto;
+
+}
+.name-production{
+	opacity: 0.7;
+	font-size: 13px;
+	color: #000;
+
+}
+.price-production{
+	color: #00b3b1;
+	/*text-align: center;*/
+	padding-top: 2px;
+	line-height: 1px;
+}
+.old-price {
+	color: #000;
+	text-decoration: line-through;
+}
+
+.clear{
+	clear: both;
+}
+.footer{
+	padding-bottom: 30px;
+	padding-top: 30px;
+	padding-left: 20px;
+	background-color: #009290;
+	color: #fff;
+
+}
+.email{
+	margin-top:  10px;
+}

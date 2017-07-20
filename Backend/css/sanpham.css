@@ -1,0 +1,25 @@
+.main{
+	/*margin-top: 5px;*/
+	padding-top: 20px;
+
+}
+.danhmuc{
+	height: 50px;
+	color: #fff;
+	background-color: #009290;
+}
+
+.list_production{
+	padding-top: 50px;
+	height: auto;
+	/*padding-bottom: 20px;*/
+	margin-bottom: 20px;
+	text-align: center;
+}
+a{
+	color: #fff;
+}
+a:hover{
+	color: #fff;
+	
+}

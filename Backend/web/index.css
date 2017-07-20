@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.row{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #666;
+}
+.container-max{
+	max-width: 1020px;
+	margin-top: 20px;
+}
+/*CSS phần Header*/
+.header-top{
+	background: #1bbc9b;
+}
+.logo{
+	padding: 15px 0px 15px 30px;
+}
+.header-menu{
+	padding: 20px 0px;
+	text-align: center;
+	background: none;
+	border: none;
+	margin:0px;
+}
+.header-menu li{
+	float: left;
+	padding: 5px 5px;
+	list-style: none;
+}
+.header-menu a{
+	padding: 15px;
+	color: #fff;
+	font-weight: bold;
+}
+.header-menu a:hover{
+	background: #fff;
+	text-decoration: none;
+	color: #000;
+}
+.search{
+	padding: 30px 30px;
+}
+.search input[type = "text"]{
+	width: 100%;
+	border-radius: 20px;
+}
+.search input[placeholder="Tìm kiếm..."]{
+	padding: 0px 5px;
+}
+.logout{
+	padding-top: 20px;
+}
+/*End CSS Header*/
+/*CSS body*/
+#body{
+	background: #fff;
+}
+.body-left{
+	float: left;
+	background: #fff;
+}
+.cart{
+	/*border: 1px solid #999;*/
+	/*border-radius: 20px;*/
+	margin: 10px 10px;
+	/*width: 200px;*/
+	height: 70px;
+}
+.cart p{
+	padding-top: 10px;
+	width: 200px;
+	height: auto;
+	font-size: 12px;
+	text-align: center;
+	color: #000;
+}
+.cart p span{
+	font-weight: bold;
+	color: #ff6633;
+}
+.cart p a{
+	text-decoration: none;
+	color: #000;
+}
+.cart p a:hover{
+	color: #1bbc9b;
+}
+.menu-prod{
+	
+	/*border: 1px solid #999;*/
+	/*border-radius: 20px;*/
+	margin-left: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+/*.menu-prod h3{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	background: #3F3F3F;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}*/
+/*.menu-prod tr{
+	background: #3f3f3f;
+}
+*/
+.menu-prod table{
+	width: 100%
+}
+.menu-prod li{
+	list-style: none;
+	line-height: 50px;
+	padding-left: 3px;
+	border-bottom: 1px solid #999;
+}
+.menu-prod li a{
+	text-decoration: none;
+	color: #000;
+}
+.menu-prod li a:hover{
+	color: #1bbc9b;
+}
+
+.body-right{
+	float: right;
+	background: #fff;
+}
+.product{
+	padding-left: 5px;
+}
+.prd-title{
+	background: #1bbc9b;
+	margin: 10px;
+}
+.prd-title h3{
+	color: #fff;
+	font-size: 18px;
+	padding: 5px;
+}
+.prd-item{
+	float: left;
+	border: 1px solid #ccc;
+	width: 200px;
+	height: auto;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.prd-item:hover{
+	opacity: 0.6;
+}
+.prd-item h3{
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 17px;
+}
+.prd-item h3 a{
+	text-decoration: none;
+	color: #000;
+}
+.prd-item h3 a:hover{
+	color: #1bbc9b;
+}
+.price{
+	color: #ff6633;
+	font-weight: bold;
+}
+.clear{
+	clear: both;
+}
+
+/*End CSS body*/
+/*CSS Footer*/
+.footer{
+	background: #bbb;
+}
+.footer h4{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+.footer p{
+	text-align: center;
+	padding-bottom: 30px;
+}
+/*.collapse-li{
+        border:none;
+}
+@media screen and (max-width : 768px) {
+    .collapse-li li{padding:10px 0px;float:none;}
+    .header-menu{padding:0px 5px 0px 0px;}
+    .logo{padding-left:5px;}
+    .navbar-header button {margin:10px 0px;}
+}
+*/
+.topnav {
+    background-color: #1bbc9b;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+#body-qt{
+	background: #eee;
+}
+.img-qt{
+	width: 80px;
+	height: 80px;
+}
+.pt{
+	text-align: center;
+}
