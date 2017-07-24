@@ -7,59 +7,62 @@
 <head>
 	<title>MarKara</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick.css"/>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/thongtinsanpham.css">
 	<link rel="stylesheet" href="css/rateit.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.rateit.js"></script>
-	<script type="text/javascript" src="js/jquery.watermark.js"></script>
-	<script type="text/javascript">
-$(document).ready(function() {
-// $("#input").watermark("Bạn muốn tìm gi?");	// Watermart cho khung nhập
-$("#input").keyup(function()
-{
-	var input = $(this).val();   		// Lấy giá trị search của người dùng
-	if(input==""){ document.getElementById("resultdata").style.display = 'none';}
-	var dataString = 'keyword='+ input;	// Lấy giá trị làm tham số đầu vào cho file ajax-search.php
-	if(input.length>0)					// Kiểm tra giá trị người nhập có > 3 ký tự hay ko
-	{
-		$.ajax({
-			type: "GET",      						// Phương thức gọi là GET
-			url: "ajax-search.php",  				// File xử lý
-			data: dataString,						// Dữ liệu truyền vào
-			beforeSend:  function() {				// add class "loading" cho khung nhập
-				$('input#input').addClass('loading');
-			},
-			success: function(server_response)		// Khi xử lý thành công sẽ chạy hàm này
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
+	<!-- <script src="js/jquery-3.1.1.min.js"></script> -->
+	
+	<!-- <script type="text/javascript">
+		$(document).ready(function() {
+		// $("#input").watermark("Bạn muốn tìm gi?");	// Watermart cho khung nhập
+		$("#input").keyup(function()
+		{
+			var input = $(this).val();   		// Lấy giá trị search của người dùng
+			if(input==""){ document.getElementById("resultdata").style.display = 'none';}
+			var dataString = 'keyword='+ input;	// Lấy giá trị làm tham số đầu vào cho file ajax-search.php
+			if(input.length>0)					// Kiểm tra giá trị người nhập có > 3 ký tự hay ko
 			{
-				$('#resultdata').html(server_response).show();  	// Hiển thị dữ liệu vào thẻ div #searchresultdata
-				$('span#faq_category_title').html(faq_search_input);	// Hiển thị giá trị search của người dùng
-				
-				if ($('input#input').hasClass("loading")) {		// Kiểm tra class "loading"
-					$("input#input").removeClass("loading");		// Remove class "loading"
-				} 
-			}
+				$.ajax({
+					type: "GET",      						// Phương thức gọi là GET
+					url: "ajax-search.php",  				// File xử lý
+					data: dataString,						// Dữ liệu truyền vào
+					beforeSend:  function() {				// add class "loading" cho khung nhập
+						$('input#input').addClass('loading');
+					},
+					success: function(server_response)		// Khi xử lý thành công sẽ chạy hàm này
+					{
+						$('#resultdata').html(server_response).show();  	// Hiển thị dữ liệu vào thẻ div #searchresultdata
+						$('span#faq_category_title').html(faq_search_input);	// Hiển thị giá trị search của người dùng
+						
+						if ($('input#input').hasClass("loading")) {		// Kiểm tra class "loading"
+							$("input#input").removeClass("loading");		// Remove class "loading"
+						} 
+					}
+				});
+			}return false;		// Không chuyển trang
 		});
-	}return false;		// Không chuyển trang
-});
-});
-</script>
+		});
+	</script> -->
 	<?php
 		include_once('connect/ketnoi.php');
 		$sqldmt = "SELECT * FROM dmt";
 		$querydmt  = mysqli_query($conn,$sqldmt);
 
 	?>
-	<script src="mdl/material.min.js"></script>
+	<!-- <script src="mdl/material.min.js"></script> -->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 </head>
 <body>
-	<script>(function(d, s, id) {
+	<script>
+		(function(d, s, id) {
 			  var js, fjs = d.getElementsByTagName(s)[0];
 			  if (d.getElementById(id)) return;
 			  js = d.createElement(s); js.id = id;
@@ -67,7 +70,7 @@ $("#input").keyup(function()
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 	</script>
-	<script>
+	<!-- <script>
 			window.fbAsyncInit = function() {
 		  FB.init({
 		    appId      : '1285853614831863',
@@ -83,7 +86,7 @@ $("#input").keyup(function()
 		   js.src = "//connect.facebook.net/en_US/sdk.js";
 		   fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
-	</script>
+	</script> -->
 	<div class="container wrapper">
 		<header>
 
@@ -236,7 +239,93 @@ $("#input").keyup(function()
 		<!-- End Footer -->
 	</div>
 	
-	<script src="js/show-image.js"></script>
+	
+	
 	<!-- <script src="js/bootstrap.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/jquery.watermark.js"></script>
+	<script src="js/jquery.rateit.js"></script>
+	<script src="js/show-image.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script> -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/slick-1.6.0/slick/slick.min.js"></script>
+
+	 <script type="text/javascript">
+	    $(document).ready(function(){
+	      $('.pack-data').slick({
+	        slidesToShow: 5,
+	        slidesToScroll: 1,
+	        autoplay: true,
+  			autoplaySpeed: 2000,
+	        arrows: false,
+	        responsive: [
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 4,
+		        slidesToScroll: 1,
+		        autoplay: true,
+  				autoplaySpeed: 2000,
+		        infinite: true
+		      }
+		    },
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,
+		        autoplay: true,
+  				autoplaySpeed: 2000,
+  				infinite: true
+		      }
+		    },
+		    {
+		      breakpoint: 747,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        autoplay: true,
+  				autoplaySpeed: 2000,
+  				infinite: true
+		      }
+		    },
+		    {
+		      breakpoint: 525,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        autoplay: true,
+  				autoplaySpeed: 2000,
+  				infinite: true
+		      }
+		    },
+		  ]
+	      });
+
+	      $('.panel-new .slick-next').on('click', function() {
+			$('.panel-new .pack-data').slick('slickNext')
+	      });
+
+	      $('.panel-new .slick-prev').on('click', function() {
+			$('.panel-new .pack-data').slick('slickPrev')
+	      });
+
+	      $('.panel-view .slick-next').on('click', function() {
+			$('.panel-view .pack-data').slick('slickNext')
+	      });
+
+	      $('.panel-view .slick-prev').on('click', function() {
+			$('.panel-view .pack-data').slick('slickPrev')
+	      });
+
+	      $('.panel-buy .slick-next').on('click', function() {
+			$('.panel-buy .pack-data').slick('slickNext')
+	      });
+
+	      $('.panel-buy .slick-prev').on('click', function() {
+			$('.panel-buy .pack-data').slick('slickPrev')
+	      });
+	    });
+	  </script>
 </body>
 </html>

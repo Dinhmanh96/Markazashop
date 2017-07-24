@@ -2,14 +2,14 @@
 
 	$dbHost = 'localhost';
 	$dbUser = 'root';
-	$dbPass = 'manh9896';
+	$dbPass = '';
 	$dbName = 'markaza';
 
 
 	// $dbHost = 'mysql.hostinger.vn';
 	// $dbUser = 'u982742432_marka';
 	// $dbPass = 'manh9896';
-	// $dbName = 'u982742432_marka';
+	// $dbName = 'u982742432_marka';	
 
 	$conn = mysqli_connect($dbHost,$dbUser,$dbPass,$dbName );
 

@@ -138,19 +138,19 @@
 			<?php
 			include_once('web/topdmview.php');
 			?>
-			
+			<hr>
 			<!-- End Slide -->
 			<div class="main">
-				<div class="row danhmuc">
-					<div class="col-xs-9 col-sm-9 col-md-8" style="padding-top: 15px;">
+				<div class="row danhmuc" style="background-color: #00b3b3; height: 45px; color: #fff;">
+					<div class="col-xs-6 col-sm-6 col-md-6" style="padding-top: 15px;">
 						<h4><?php echo $rs?></h4>
 					</div>
-					<div class="col-sx-3 col-sm-3 col-md-4" style="padding-top: 8px;">
+					<div class="col-sx-6 col-sm-6 col-md-6" style="padding-top: 8px;">
 						
-		                <span>Lọc:</span>
-			               <a href="index.php?page_layout=sanpham&<?php if(isset($_GET['id_dmt'])){echo 'id_dmt='.$_GET['id_dmt'];}else{echo 'id_dmn='.$_GET['id_dmn']; }?>&filter=ct"><button  type="button" class="btn btn-default" style="font-size: 12px">Thấp đến cao</button></a>
+		                <!-- <span style="float:right;">Lọc:</span> -->
+			               <a style="float:right;" href="index.php?page_layout=sanpham&<?php if(isset($_GET['id_dmt'])){echo 'id_dmt='.$_GET['id_dmt'];}else{echo 'id_dmn='.$_GET['id_dmn']; }?>&filter=ct"><button  type="button" class="btn btn-default" style="font-size: 12px">Thấp đến cao</button></a>
 
-			               <a href="index.php?page_layout=sanpham&<?php if(isset($_GET['id_dmt'])){echo 'id_dmt='.$_GET['id_dmt'];}else{echo 'id_dmn='.$_GET['id_dmn']; }?>&filter=tc"><button type="button" class="btn btn-default" style="font-size: 12px">Cao đến thấp</button></a>
+			               <a style="float:right; padding: 0px 5px;" href="index.php?page_layout=sanpham&<?php if(isset($_GET['id_dmt'])){echo 'id_dmt='.$_GET['id_dmt'];}else{echo 'id_dmn='.$_GET['id_dmn']; }?>&filter=tc"><button type="button" class="btn btn-default" style="font-size: 12px">Cao đến thấp</button></a>
 		            	
 					</div>
 				</div>
@@ -169,7 +169,7 @@
 							<a href="index.php?page_layout=thongtinsanpham&id_sp=<?php echo $rs2?>"><center><img src="image/Source/<?php echo $rows['anh_sp']?>" class="img-responsive" alt="" width="150px" height="auto"></center></a>
 						</div>
 						<div style="height: 50px">
-							<p class="name-production" style="padding-top: 5px"><?php echo $rows['ten_sp']?></p>
+							<p class="name-production" style="padding-top: 5px; max-width: 90%; white-space: nowrap;	overflow: hidden; text-overflow: ellipsis;"><?php echo $rows['ten_sp']?></p>
 							<p class="price-production" style="padding-top: 10px"><b><?php echo number_format($rows['gia_sp'],0,',','.') ?>VND</b></p>
 						</div>
 					</div>

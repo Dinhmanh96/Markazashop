@@ -13,6 +13,7 @@
 <head>
 	<title>ADMIN - MarKara</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/sp.css">
 	<script type="text/javascript" src="ck/ckeditor/ckeditor.js"></script>
@@ -30,6 +31,12 @@
 		    }
 		}
 	</script>
+
+	<style type="text/css" media="screen">
+		th, td{
+  max-width: 100px; white-space: nowrap;  overflow: hidden; text-overflow: ellipsis;
+}
+	</style>
 </head>
 <body>
 	<div class="container">

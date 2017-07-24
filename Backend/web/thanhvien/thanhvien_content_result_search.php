@@ -14,7 +14,6 @@
 					<th width="15%">Address</th>
 					<th width="10%">Quyền</th>
 					<th width="5%" style="text-align:center;">Sửa</th>
-					<!-- <th width="5%" style="text-align:center;">Xóa</th> -->
 				</tr>
 			</thead>
 			<tbody>

@@ -100,7 +100,7 @@ for($i = 1; $i<= $totalPages; $i++){
 			    				<a href="index.php?page_layout=thongtinsanpham&id_sp=<?php echo $rs2?>"><center><img src="image/Source/<?php echo $rows['anh_sp']?>" class="img-responsive" alt="" width="180px" height="180"></center></a>
 			    			</div>
 			    			<div style="height: 50px">
-			    				<p class="name-production" style="padding-top: 5px"><?php echo $rows['ten_sp']?></p>
+			    				<p class="name-production" style="padding-top: 5px; max-width: 90%;	white-space: nowrap;	overflow: hidden; text-overflow: ellipsis;"><?php echo $rows['ten_sp']?></p>
 			    				<p class="price-production" style="padding-top: 10px"><b><?php echo number_format($rows['gia_sp'],0,',','.') ?>VND</b></p>
 			    			</div>
 			    		</div>

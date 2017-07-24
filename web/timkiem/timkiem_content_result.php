@@ -17,18 +17,34 @@
 	</div>
 	<hr>
 		<div class="row top100">
-			<div class="col-xs-12 col-sm-12 col-md-12 ">
+			
 				<?php
 					while ($rows = mysqli_fetch_array($query)) {
 				?>
 				<?php
 				$rs = $rows['id_sp'];
 				?>
-				<div class="production">
-						<center><a href="index.php?page_layout=thongtinsanpham&id_sp=<?php echo $rs?>"><img src="image/Source/<?php echo $rows['anh_sp']?>" class="img-responsive" alt="" width="200px" height="200px"></a></center>
-						<p style="padding-top: 10px;" class="name-production"><?php echo $rows['ten_sp']?></p>
-						<p style="padding-top: 10px;" class="price-production"><b><?php echo number_format($rows['gia_sp'],0,',','.') ?>VND</b></p>
+				<div class="list_production">
+					<?php
+					while ($rows = mysqli_fetch_array($query)) {
+					 ?>
+					<?php
+					$rs2 = $rows['id_sp'];
+					?>
+					<div class="production"  style="height: 250px; width: 200px; border: solid 1px #eee; margin:11px; ">
+						<div style="height: 200px;">
+							<a href="index.php?page_layout=thongtinsanpham&id_sp=<?php echo $rs2?>"><center><img src="image/Source/<?php echo $rows['anh_sp']?>" class="img-responsive" alt="" width="150px" height="auto"></center></a>
+						</div>
+						<div style="height: 50px">
+							<p class="name-production" style="padding-top: 5px; max-width: 90%; white-space: nowrap;	overflow: hidden; text-overflow: ellipsis;"><?php echo $rows['ten_sp']?></p>
+							<p class="price-production" style="padding-top: 10px"><b><?php echo number_format($rows['gia_sp'],0,',','.') ?>VND</b></p>
+						</div>
 					</div>
+					 <?php 
+
+					 }
+					  ?>
+				</div>
 				<?php
 				}
 
@@ -70,5 +86,5 @@
 							</li>
 						</ul>
 					</nav>			
-			</div>
 		</div>
+		<hr>
